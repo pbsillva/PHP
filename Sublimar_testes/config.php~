@@ -1,0 +1,7 @@
+<?php
+$localhost="localhost";
+$usuario="root";
+$senha="";
+$bd="ecommerce";
+$mysqli = mysqli_connect($localhost, $usuario, $senha, $bd);
+?>

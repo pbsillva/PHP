@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Projeto Caneca</title>
+</head>
+
+<body>
+    <center><img src="./arquivos/logo.jfif" alt="logo" width="100" height="100"></center>
+    <center>
+        <H2>Sublimar Personalizados</H2>
+    </center>
+    <center><button class="button button6" onclick="change_page()">Cadastrar</button></center>
+    <center><button class="button button2" onclick="change_page2()">Pesquisar Pedidos</button></center>
+    <center><button class="button button3">Backup Base de Dados</button>
+        <button class="button button4">Carregar Base de Dados</button></center>
+
+    <script>
+        function change_page() {
+            window.location.href = "cadastro_pedido.html";
+        }
+
+        function change_page2() {
+            window.location.href = "pesquisar_pedido.html";
+        }
+    </script>
+</body>
+
+</html>

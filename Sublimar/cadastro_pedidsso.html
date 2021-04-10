@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="layout/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="layout/style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h3>
+        <br>
+        <div class="row justify-content-center">Cadastro de Pedidos</div></h3>
+    <br>
+    <form>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg>
+                    <label>Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome Completo">
+                </div>
+                <div class="col-4">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                      </svg>
+                    <label>Telefone</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="(XX)XXXXX-XXXX">
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <label>Rua</label>
+                    <input type="text" class="form-control" nome="rua">
+                </div>
+                <div class="col-1">
+                    <label>Numero</label>
+                    <input type="text" class="form-control" nome="numero">
+                </div>
+                <div class="col-2 ">
+                    <label>Complemento</label>
+                    <input type="text " class="form-control " nome="complemento " placeholder="Apto 401... ">
+                </div>
+                <div class="col-2 ">
+                    <label>Cidade</label>
+                    <input type="text " class="form-control " nome="cidade">
+                </div>
+                <div class="col-2 ">
+                    <label>Estado</label>
+                    <input type="text " class="form-control " nome="estado" placeholder="Ex: RS ">
+                </div>
+            </div>
+            <br>
+
+    </form>
+    <div class="container">
+        <button class="button button1 " onclick="salvar_cadastro() ">Cadastrar</button>
+        <button class="button button5 " onclick="change_page4() ">Voltar</button>
+        <br>
+    </div>
+    <script>
+        function change_page4() {
+            window.location.href = "index.html ";
+        }
+
+        function salvar_cadastro() {
+            window.location.href = "salvar_cadastro.php ";
+        }
+    </script>
+</body>
+
+</html>
+
+<script>
+
+    function preview() {
+        var imagem = document.querySelector('input[name=image]').files[0];
+        var preview = document.querySelector('img');
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+            preview.src = reader.result;
+        }
+        if (imagem) {
+            reader.readAsDataURL(imagem);
+        }
+        else {
+            preview.src = "";
+        }
+    }
+</script>
